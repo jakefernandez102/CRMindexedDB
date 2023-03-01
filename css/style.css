@@ -1,0 +1,27 @@
+.overlay{
+    position: relative;
+    z-index: 0;
+    background-image: url(./../img/hands.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    
+}
+.overlay::before{
+    content: '';
+    position: absolute;
+    background: rgb(0 0 0 /.30);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    backdrop-filter: blur(3px);
+}
+.overlay .fondo{
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    width: 100%;
+}
